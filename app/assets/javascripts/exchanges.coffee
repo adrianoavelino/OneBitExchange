@@ -13,3 +13,12 @@ $(document).ready ->
         success: (data, text, jqXHR) ->
           $('#result').val(data.value)
       return false;
+
+  $('[data-js=reverseCurrency]').click ->
+    tempSource = source_currency.value
+    tempTarget = target_currency.value
+    source_currency.value = tempTarget
+    target_currency.value = tempSource
+    $("#amount").val('')
+    $("#result").val('')
+    return false
