@@ -1,38 +1,121 @@
-body {
-  background: image-url("/background-img.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #37517e;
 }
 
-.main{
-  margin-top: 50px;
-}
+.container {
+  min-height: 100%;
 
-
-.title-box{
-  margin-top: 20%;
-
-  .title{
-    color: white;
-    text-shadow: 2px 0px 2px #000000;
-  }
-
-  .subtitle{
-    color: white;
-    text-shadow: 3px 0px 3px #000000;
-    font-size: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+  .box {
+    height: 100%;
   }
 }
 
+.icon {
+  font-size: 20px;
 
-.exchange_box{
-  margin: 10px auto;
-  .logo-box{
-    margin: 0 auto;
-    padding-bottom: 10px;
+  font-weight: bold;
+  padding: 5px 5px 0;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+  }
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.app-header {
+  padding: 5px 10px 30px;
+  font-family: 'Roboto', sans-serif;
+
+  small {
+    display: block;
+  }
+}
+
+
+.app-title {
+  font-size: 34px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  text-align: center;
+  line-height: 0.9;
+}
+
+
+.footer {
+  color: #fff;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  line-height: 0.9;
+  div {
+    height: 100%;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.credits {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+}
+
+.credits-links {
+  position: relative;
+  display: none;
+  padding: 5px;
+  width: 100%;
+
+  p {
+    li  .app-header {
+
+  }ne-height: 0.9;
+  }
+}
+
+@media (max-width: 425px) {
+  #map {
+    display: none;
+  }
+
+  .app-title {
+    small {
+      display: inline;
+    }
+  }
+
+  .input-group input {
+    padding: 0;
+  }
+}
+
+@media (max-height: 470px) {
+  .footer {
+    position: static;
+    margin-top: 20px;
   }
 }

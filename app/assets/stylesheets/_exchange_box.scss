@@ -1,61 +1,65 @@
-.exchange_box{
+.group {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 
-  .card{
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
     border: 0;
-
-    .card-header{
-      background-color: #878d99;
-      border-radius: 0;
-      color: white;
-      font-weight: 700;
-    }
-
-    .card-block{
-      padding-top: 10px;
-      padding: 20px;
-
-      .title{
-        color: #878d99;
-        font-weight: 700;
-      }
-
-      .btn-exchange{
-        background-color: #5bc0de;
-        border-color: #5bc0de;
-        border-radius: 0;
-      }
-    }
+    color:#666;
   }
 }
 
-@media only screen and (max-width : 992px) {
-  .card-header {
-    font-size: 25px;
+.input-group,
+.select-group {
+  color: #333;
+}
+
+.input-group {
+  border: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+
+  label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0;
+    color: #324A5E;
+    font-weight: bold;
   }
 
-  .title{
-    margin-top: 30px;
-    font-size: 20px;
+  input {
+    padding: 5px;
   }
+}
 
-  .form-group {
-    select {
-      font-size: 20px;
-      height: 50px !important;
-    }
-
-    input {
-      font-size: 20px;
-      height: 50px;
-    }
+.select-group {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  select {
+    padding: 5px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #f3f3f3;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    font-weight: bold;
   }
+}
 
-
-  #result {
-    margin-bottom: 20px;
-  }
-
-  .btn-exchange {
-    font-size: 20px;
-  }
+.converter-group {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 15px;
 }

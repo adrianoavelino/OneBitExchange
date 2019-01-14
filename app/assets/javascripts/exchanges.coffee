@@ -22,3 +22,7 @@ $(document).ready ->
     $("#amount").val('')
     $("#result").val('')
     return false
+
+  $('.credits a').click (e) ->
+    e.preventDefault()
+    $('.credits-links').toggle()
