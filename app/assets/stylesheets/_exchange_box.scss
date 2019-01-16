@@ -63,3 +63,18 @@
   text-align: center;
   margin: 0 15px;
 }
+
+path {
+    transition: fill;
+}
+#converter {
+  fill:#eee;
+}
+
+#converter:hover {
+  -webkit-transition: fill;
+  -moz-transition: fill;
+  -o-transition: fill;
+  transition: fill;
+  fill: #bbb;
+}
