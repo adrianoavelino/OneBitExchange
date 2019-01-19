@@ -6,7 +6,7 @@
         <div class="group">
           <div class="input-group">
             <label for="amount" class='title'>Seu dinheiro:</label>
-            <input type='number' id='amount' name='amount' placeholder='$' >
+            <input type='number' id='amount' name='amount' placeholder='$' required="true" >
           </div>
           <div  class="select-group">
             <%= select_tag 'source_currency', options_for_select(currency_list, 'BRL'), id: 'source_currency' %>
